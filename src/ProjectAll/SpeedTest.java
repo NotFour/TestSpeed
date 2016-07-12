@@ -22,7 +22,7 @@ public class SpeedTest
             mas[i] = i;
         }
         Date data2 = new Date();
-        System.out.println("В массив заносим за " + (data2.getTime() - data1.getTime()));
+        System.out.println("В обычный массив заносим за " + (data2.getTime() - data1.getTime()));
 
 
         Date data3 = new Date();
@@ -31,7 +31,7 @@ public class SpeedTest
             hash.add(i);
         }
         Date data4 = new Date();
-        System.out.println("В хешсет заносится за " + (data4.getTime() - data3.getTime()));
+        System.out.println("В HashSet заносится за " + (data4.getTime() - data3.getTime()));
 
 
         Date data5 = new Date();
@@ -40,7 +40,7 @@ public class SpeedTest
             map.put(i, i);
         }
         Date data6 = new Date();
-        System.out.println("В хешмап заносится за " + (data6.getTime() - data5.getTime()));
+        System.out.println("В HeshMap заносится за " + (data6.getTime() - data5.getTime()));
 
 
         Date data7 = new Date();
@@ -49,7 +49,7 @@ public class SpeedTest
             link.add(i);
         }
         Date data8 = new Date();
-        System.out.println("В линкед заносится за " + (data8.getTime() - data7.getTime()));
+        System.out.println("В LinkedList заносится за " + (data8.getTime() - data7.getTime()));
 
 
         Date data9 = new Date();
@@ -58,7 +58,7 @@ public class SpeedTest
             array.add(i);
         }
         Date data10 = new Date();
-        System.out.println("В эррей заносится за " + (data10.getTime() - data9.getTime()));
+        System.out.println("В ArrayList заносится за " + (data10.getTime() - data9.getTime()));
 
 
 
@@ -68,7 +68,7 @@ public class SpeedTest
             int a=mas[i];
         }
         Date data12 = new Date();
-        System.out.println("Гет из массива "+(data12.getTime()-data11.getTime()));
+        System.out.println("Гет из обычного массива "+(data12.getTime()-data11.getTime()));
 
 
         Iterator<Integer> iterator1 = hash.iterator();
@@ -77,7 +77,7 @@ public class SpeedTest
             int b = iterator1.next();
         }
         Date data14 = new Date();
-        System.out.println("Гет из хешсета "+(data14.getTime()-data13.getTime()));
+        System.out.println("Гет из HeshSet "+(data14.getTime()-data13.getTime()));
 
 
         Iterator<Map.Entry<Integer,Integer>> iterator2 = map.entrySet().iterator();
@@ -86,7 +86,7 @@ public class SpeedTest
             int a = iterator2.next().getKey();
         }
         Date data16 = new Date();
-        System.out.println("Гет из мапа "+(data16.getTime()-data15.getTime()));
+        System.out.println("Гет из HeshMap "+(data16.getTime()-data15.getTime()));
 
 
 
@@ -97,15 +97,16 @@ public class SpeedTest
             int a = array.get(i);
         }
         Date data20 = new Date();
-        System.out.println("Гет из эррея "+(data20.getTime()-data19.getTime()));
+        System.out.println("Гет из ArrayList "+(data20.getTime()-data19.getTime()));
 
-        Date data17 = new Date();
+        /*Date data17 = new Date();
         for(int i=0;i<link.size();i++){
             int a = link.get(i);
         }
         Date data18 = new Date();
-        System.out.println("Гет из линкеда "+(data18.getTime()-data17.getTime()));
-        System.out.println("Гет из линкеда ОЧЕНЬ ДОЛГО");
+        System.out.println("Гет из линкеда "+(data18.getTime()-data17.getTime()));*/
+        System.out.println("Гет из LinkedList ОЧЕНЬ ДОЛГО");
+
 
 
 
